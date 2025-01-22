@@ -3,9 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-body{
-    
-}
+
 
 body{
     
@@ -13,9 +11,7 @@ body{
 	margin: 0;
 	padding: 0;
     font-family: "Quicksand", serif;
-    
-    
-
+    background: url(src/bg.png);
 }
 
 
@@ -298,19 +294,6 @@ body{
   }
 
 
-  /*
-  .column-left h5{
-        font-size: 24px;
-        opacity: .5;
-  }
-
-  .column-left p{
-        margin-bottom: 1.75rem;
-        font-size: 56px;
-        font-weight: bolder;
-  }
-
-*/
   .column-right1{
     
     justify-content: center;
@@ -330,7 +313,72 @@ body{
    }
    
 
-   footer{
-    background: #01ACFD;
-   }
 
+/*************footer********************/
+
+footer{
+    
+    bottom: 0;
+    background: rgb(200, 200, 255);
+    color: #ffffff;
+    padding: 100px 100px 30px;
+    border-top-left-radius: 125px;
+}
+
+.row{
+    
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.col span {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    
+
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.logoText{
+    display: flex;
+}
+
+
+.logoText p{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.logoText img{
+    height: 62px;
+    margin-top: 35px;
+    
+
+}
