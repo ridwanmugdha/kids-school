@@ -382,3 +382,64 @@ ul li a{
     
 
 }
+
+
+
+
+/************Image grid*****************/
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+.parent {
+  padding: 2vh 18vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 18px;
+}
+  
+.div1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 4 / span 4;
+}
+
+@media (max-width: 768px) {
+  .div1 {
+    display: none;
+  }
+}
+
+.div2 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+}
+
+.div3 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+}
+
+.div4 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+
+.div5 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+      
+.div1,.div2,.div3,.div4,.div5,.logo,img:hover{
+  cursor:pointer;
+  
+}
+
